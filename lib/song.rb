@@ -43,7 +43,7 @@ def self.new_from_filename(filename)
   place = place.join
   place = place.split("-")
   song = self.create_by_name(place[1])
-  song..artist_name = place[0]
+  song.artist_name = place[0]
   song
 end
 
