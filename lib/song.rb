@@ -46,8 +46,14 @@ def self.new_from_filename(filename)
   song.artist_name = place[0]
   song
 end
-
-
+def self.create_from_filename(filename)
+place = filename.split(".mp3")
+  place = place.join
+  place = place.split(" - ")
+  song = self.create_by_name(place[1])
+  song.artist_name = place[0]
+  song
+end
 
 end
 
