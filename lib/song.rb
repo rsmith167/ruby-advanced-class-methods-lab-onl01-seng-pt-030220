@@ -40,7 +40,6 @@ def self.alphabetical
 end
 def self.new_from_filename(filename)
   place = filename.split(".mp3")
-  place[1].clear
   place = place.flatten
   place = place.split("-")
   song = self.create_by_name(place[1])
