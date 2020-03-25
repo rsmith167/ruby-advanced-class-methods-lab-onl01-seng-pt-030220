@@ -36,7 +36,7 @@ def self.find_or_create_by_name(name)
   end
 end
 def self.alphabetical
-  
+  self.all 
 end
 def self.new_from_filename(filename)
   place = filename.split(".mp3")
