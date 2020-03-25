@@ -54,7 +54,9 @@ place = filename.split(".mp3")
   song.artist_name = place[0]
   song
 end
-
+def self.destroy_all
+  @@all = []
+end
 end
 
 
