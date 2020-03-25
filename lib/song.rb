@@ -36,7 +36,7 @@ def self.find_or_create_by_name(name)
   end
 end
 def self.alphabetical
-  self.all.sort {|song| song.name <> }
+  self.all.sort {|a,b| a.name <=> b.name}
 end
 def self.new_from_filename(filename)
   place = filename.split(".mp3")
